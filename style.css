@@ -1,0 +1,474 @@
+/* --- 1. Configurações Globais e Tipografia --- */
+
+/* Importando uma fonte moderna e limpa do Google Fonts, similar à usada em sistemas modernos */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+/* Reset básico e definição do box-sizing para um layout mais previsível */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* --- Variáveis de Cor --- */
+:root {
+    /* Tema Escuro (Padrão) */
+    --bg-color: #111;
+    --text-color-primary: #f5f5f7;
+    --text-color-secondary: #888;
+    --card-bg-color: #1d1d1f;
+    --input-bg-color: #222;
+    --border-color: #333;
+    --border-color-focus: #0071e3;
+    --accent-color: #0071e3;
+    --accent-color-hover: #0077ed;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --shine-color: rgba(255, 255, 255, 0.08);
+    --lancamento-bg-start: #3a0ca3;
+    --lancamento-bg-end: #0071e3;
+}
+
+body.light-mode {
+    /* Tema Claro */
+    --bg-color: #f5f5f7;
+    --text-color-primary: #1d1d1f;
+    --text-color-secondary: #555;
+    --card-bg-color: #ffffff;
+    --input-bg-color: #e9e9ec;
+    --border-color: #ddd;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --shine-color: rgba(0, 0, 0, 0.05);
+    --lancamento-bg-start: #4361ee;
+    --lancamento-bg-end: #0077ed;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color-primary);
+    line-height: 1.6;
+
+    /* Estrutura para manter o footer no final da página */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* --- 2. Estrutura Principal (Header, Main, Footer) --- */
+
+header, main, footer {
+    width: 100%;
+    max-width: 960px; /* Limita a largura para melhor legibilidade em telas grandes */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 2rem;
+}
+
+main {
+    flex-grow: 1; /* Faz o conteúdo principal ocupar o espaço disponível */
+}
+
+/* --- 3. Header e Barra de Busca --- */
+
+header {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem; /* Diminuído para aproximar do subtítulo */
+    color: var(--text-color-primary);
+}
+
+header h4 {
+    font-weight: 400; /* Deixa o subtítulo um pouco mais leve */
+    color: var(--text-color-secondary);
+    margin-bottom: 2.5rem; /* Aumentado para afastar da barra de busca */
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.search-container input {
+    width: 100%;
+    max-width: 350px;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--input-bg-color);
+    color: var(--text-color-primary);
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: var(--border-color-focus);
+    box-shadow: 0 0 0 3px var(--accent-color-hover);
+}
+
+#botao-busca {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--accent-color);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#botao-busca:hover {
+    background-color: var(--accent-color-hover);
+}
+
+/* Botão para limpar a busca/voltar */
+#botao-voltar {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: transparent;
+    color: var(--text-color-secondary);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#botao-voltar:hover {
+    background-color: var(--input-bg-color);
+    color: var(--text-color-primary);
+}
+
+/* Filtros de Categoria */
+.category-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2rem;
+}
+
+.category-filters button {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    background-color: transparent;
+    color: var(--text-color-secondary);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.category-filters button:hover {
+    background-color: var(--input-bg-color);
+    color: var(--text-color-primary);
+    border-color: var(--accent-color);
+}
+
+.category-filters button.active {
+    background-color: var(--accent-color);
+    color: #fff;
+    border-color: var(--accent-color);
+    font-weight: 500;
+}
+
+/* --- 4. Cards dos Jogos --- */
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border-color);
+    color: var(--text-color-primary);
+}
+
+.card-container {
+    display: grid;
+    /* Grid responsivo: 1 coluna em telas pequenas, 2 em médias, 3 em grandes */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem; /* Espaçamento generoso entre os cards */
+    padding-top: 1rem;
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    border-radius: 16px; /* Bordas bem arredondadas, estilo Apple */
+    cursor: pointer; /* Indica que o card é clicável */
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;    
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Mantém as transições existentes */
+
+    /* Adições para o efeito de brilho */
+    position: relative; /* Necessário para posicionar o brilho dentro do card */
+    overflow: hidden;   /* Esconde o brilho quando ele está fora dos limites do card */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito sutil de elevação */
+    box-shadow: 0 10px 20px var(--shadow-color);
+}
+
+/* O elemento que cria o efeito de brilho */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Começa totalmente à esquerda, fora do card */
+    width: 75%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, var(--shine-color), transparent);
+    transform: skewX(-25deg); /* Inclina o brilho */
+    transition: left 0.8s cubic-bezier(0.23, 1, 0.32, 1); /* Animação suave do movimento */
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+    color: var(--text-color-primary);
+}
+/* Quando o mouse passa por cima do card, move o brilho para a direita */
+.card:hover::before {
+    left: 100%;
+}
+
+
+.card .ano {
+    color: var(--text-color-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.card a {
+    margin-top: auto; /* Empurra o link para o final do card */
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Seção de Lançamentos */
+.lancamentos-section {
+    margin-bottom: 4rem;
+}
+
+.lancamentos-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border-color);
+    color: var(--text-color-primary);
+}
+
+.lancamentos-container {
+    display: flex; /* Alterado de grid para flex */
+    gap: 1.5rem; /* Espaçamento entre os cards */
+    overflow-x: auto; /* Permite a rolagem horizontal */
+    scroll-behavior: smooth; /* Animação suave na rolagem */
+    padding: 1rem 0;
+
+    /* Esconde a barra de rolagem padrão */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.lancamentos-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
+
+/* Wrapper para posicionar os botões */
+.carousel-wrapper {
+    position: relative;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card.lancamento {
+    flex: 0 0 260px; /* Define um tamanho fixo para os cards no carrossel */
+    background: linear-gradient(135deg, var(--lancamento-bg-start), var(--lancamento-bg-end));
+    border: none;
+    box-shadow: 0 8px 25px rgba(0, 113, 227, 0.3);
+}
+
+.card.lancamento h2 {
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.card.lancamento .ano, .card.lancamento p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.card.lancamento a {
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Ajustes para diminuir a altura dos cards de lançamento */
+.card.lancamento {
+    padding: 1rem; /* Reduz ainda mais o preenchimento interno */
+}
+
+.card.lancamento h2 {
+    font-size: 1.15rem; /* Reduz ainda mais o tamanho do título */
+    margin-bottom: 0.1rem;
+}
+
+.card.lancamento .ano {
+    margin-bottom: 0.5rem; /* Reduz ainda mais o espaçamento abaixo do ano */
+}
+
+.card.lancamento p {
+    font-size: 0.85rem; /* Diminui o texto da descrição */
+    line-height: 1.4; /* Diminui o espaçamento entre linhas da descrição */
+}
+
+/* Posicionamento dos botões */
+#prev-lancamento {
+    left: -20px;
+}
+
+#next-lancamento {
+    right: -20px;
+}
+
+/* --- 5. Footer --- */
+
+.footer {
+    text-align: center;
+    padding-top: 3rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-color-secondary);
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: var(--text-color-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+/* --- 6. Modal de Imagem --- */
+
+.modal-container {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fica fixo na tela, mesmo com rolagem */
+    z-index: 1000; /* Garante que fique sobre todo o resto */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permite rolagem se a imagem for muito grande */
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo preto semi-transparente */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.mostrar {
+    display: flex; /* Muda para flex para centralizar o conteúdo quando visível */
+}
+
+.modal-conteudo {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80vh;
+    border-radius: 8px;
+    /* Animação de zoom na aparição */
+    animation: zoom 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+@keyframes zoom {
+    from {transform: scale(0.7)}
+    to {transform: scale(1)}
+}
+
+.modal-fechar {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.modal-fechar:hover,
+.modal-fechar:focus {
+    color: #bbb;
+    text-decoration: none;
+}
+
+/* --- 7. Botão de Troca de Tema --- */
+
+.theme-switcher-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#theme-toggle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background-color: var(--card-bg-color);
+    color: var(--text-color-primary);
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+#theme-toggle:active {
+    transform: scale(0.95);
+}

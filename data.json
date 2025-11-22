@@ -1,0 +1,250 @@
+[
+{
+    "nome":"Elden Ring",
+    "slug": "elden-ring",
+    "descrição": "Jogo de RPG",
+    "imagem": "https://image.api.playstation.com/vulcan/ap/rnd/202108/0410/0J043833B93663psn0N4n5d.jpg",
+    "Ano": 2022,
+    "link": "https://www.fromsoftware.jp/ww"
+},
+{
+    "nome":"Persona",
+    "slug": "persona-5-royal",
+    "descrição": "Jogo de RPG da Atlus",
+    "imagem": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0708/x4H1i3G140V6F4r1sW1k1aLp.jpg",
+    "Ano": 2016,
+    "link": "https://atlus.com"
+},
+{
+    "nome": "The Witcher 3: Wild Hunt",
+    "slug": "witcher-iii-wild-hunt",
+    "descrição": "Um RPG de ação em mundo aberto desenvolvido pela CD Projekt Red.",
+    "imagem": "https://image.api.playstation.com/vulcan/img/rnd/202211/0711/pNB4m2B6rB3pA4sAP55a2sVz.jpg",
+    "Ano": 2015,
+    "link": "https://www.thewitcher.com/"
+},
+{
+    "nome": "Red Dead Redemption 2",
+    "slug": "red-dead-redemption-ii",
+    "descrição": "Um jogo de ação e aventura em mundo aberto desenvolvido pela Rockstar Games.",
+    "imagem": "https://image.api.playstation.com/vulcan/img/rnd/202010/2618/Y02ljdBodKFBiziorYgqftTq.jpg",
+    "Ano": 2018,
+    "link": "https://www.rockstargames.com/reddeadredemption2/"
+},
+{
+    "nome": "God of War",
+    "slug": "god-of-war",
+    "descrição": "Um jogo de ação e aventura desenvolvido pela Santa Monica Studio.",
+    "imagem": "https://image.api.playstation.com/vulcan/img/rnd/202010/2217/p3pYq0M4s314h66b32s8mIq9.jpg",
+    "Ano": 2018,
+    "link": "https://www.playstation.com/pt-br/games/god-of-war/"
+},
+{
+    "nome": "Hollow Knight",
+    "slug": "hollow-knight",
+    "descrição": "Um jogo de ação e aventura 2D no estilo metroidvania, desenvolvido pela Team Cherry.",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/367520/header.jpg",
+    "Ano": 2017,
+    "link": "https://www.hollowknight.com/"
+},
+{
+    "nome": "The Legend of Zelda: Breath of the Wild",
+    "slug": "the-legend-of-zelda-breath-of-wild",
+    "descrição": "Um jogo de ação e aventura em mundo aberto desenvolvido pela Nintendo.",
+    "imagem": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000000025/7137262b5a64d374551373a4de4b49597ccae5578633c26a2a6476f22c3631e1",
+    "Ano": 2017,
+    "link": "https://www.zelda.com/breath-of-the-wild/"
+},
+{
+    "nome": "Super Mario Odyssey",
+    "slug": "super-mario-odyssey",
+    "descrição": "Um jogo de plataforma 3D desenvolvido pela Nintendo.",
+    "imagem": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000001130/c42553b4fd0312c31e70ec746804999b732574432SQUARE.jpg",
+    "Ano": 2017,
+    "link": "https://www.nintendo.com/store/products/super-mario-odyssey-switch/"
+},
+{
+    "nome": "Minecraft",
+    "slug": "minecraft",
+    "descrição": "Um jogo sandbox que permite aos jogadores construir com uma variedade de blocos em um mundo 3D.",
+    "imagem": "https://image.api.playstation.com/vulcan/img/rnd/202009/2913/TQS5i422a2x1b21z12D0d4a2.png",
+    "Ano": 2011,
+    "link": "https://www.minecraft.net/"
+},
+{
+    "nome": "Grand Theft Auto V",
+    "slug": "grand-theft-auto-v",
+    "descrição": "Um jogo de ação e aventura em mundo aberto desenvolvido pela Rockstar North.",
+    "imagem": "https://image.api.playstation.com/vulcan/ap/rnd/202203/1411/y2G5n1z9sA8O0d3m3lGfT62s.png",
+    "Ano": 2013,
+    "link": "https://www.rockstargames.com/gta-v"
+},
+{
+    "nome": "Stardew Valley",
+    "slug": "stardew-valley",
+    "descrição": "Um RPG de simulação de fazenda desenvolvido por ConcernedApe.",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/413150/header.jpg",
+    "Ano": 2016,
+    "link": "https://www.stardewvalley.net/"
+},
+{
+    "nome": "Celeste",
+    "slug": "celeste",
+    "descrição": "Um jogo de plataforma sobre escalar uma montanha, da Matt Makes Games.",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/504230/header.jpg",
+    "Ano": 2018,
+    "link": "https://www.celestegame.com/"
+},
+{
+    "nome": "Undertale",
+    "slug": "undertale",
+    "descrição": "Um RPG onde ninguém precisa ser ferido, desenvolvido por Toby Fox.",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/391540/header.jpg",
+    "Ano": 2015,
+    "link": "https://undertale.com/"
+},
+{
+    "nome": "Dark Souls III",
+    "slug": "dark-souls-iii",
+    "descrição": "Um RPG de ação desafiador da FromSoftware.",
+    "imagem": "https://image.api.playstation.com/vulcan/img/rnd/202011/1021/x1k89M6i123456789012.png",
+    "Ano": 2016,
+    "link": "https://www.darksouls3.com/"
+},
+{
+    "nome": "Bloodborne",
+    "slug": "bloodborne",
+    "descrição": "Um RPG de ação gótico da FromSoftware, exclusivo para PlayStation.",
+    "imagem": "https://image.api.playstation.com/vulcan/img/rnd/202010/2614/wZ1vG3a6sPNH3sSzbYfwf2j3.png",
+    "Ano": 2015,
+    "link": "https://www.playstation.com/pt-br/games/bloodborne/"
+},
+{
+    "nome": "Sekiro: Shadows Die Twice",
+    "slug": "sekiro-shadows-die-twice",
+    "descrição": "Um jogo de ação e aventura da FromSoftware com foco em combate furtivo e com espadas.",
+    "imagem": "https://image.api.playstation.com/vulcan/img/rnd/202010/2723/v1a5n1w3o1p1q1r1s1t1.png",
+    "Ano": 2019,
+    "link": "https://www.sekirothegame.com/"
+},
+{
+    "nome": "Cyberpunk 2077",
+    "slug": "cyberpunk-2077",
+    "descrição": "Um RPG de ação em mundo aberto ambientado em uma metrópole futurista, da CD Projekt Red.",
+    "imagem": "https://image.api.playstation.com/vulcan/img/rnd/202102/2322/6C5G3D5A7B9C1E3F2G1H.png",
+    "Ano": 2020,
+    "link": "https://www.cyberpunk.net/"
+},
+{
+    "nome": "Baldur's Gate 3",
+    "slug": "baldurs-gate-iii",
+    "descrição": "Um RPG baseado em Dungeons & Dragons, desenvolvido pela Larian Studios.",
+    "imagem": "https://image.api.playstation.com/vulcan/ap/rnd/202302/2321/355734fee66263de6d364149299a636c49962a585423916d.jpg",
+    "Ano": 2023,
+    "link": "https://baldursgate3.game/"
+},
+{
+    "nome": "Final Fantasy VII Remake",
+    "slug": "final-fantasy-vii-remake",
+    "descrição": "A recriação do clássico RPG de 1997, desenvolvido pela Square Enix.",
+    "imagem": "https://image.api.playstation.com/vulcan/img/rnd/202010/2119/HJZsW3S1yA5x5x5y5z5A.png",
+    "Ano": 2020,
+    "link": "https://ffvii-remake.square-enix-games.com/"
+},
+{
+    "nome": "Ghost of Tsushima",
+    "slug": "ghost-of-tsushima",
+    "descrição": "Um jogo de ação e aventura em mundo aberto ambientado no Japão feudal, da Sucker Punch Productions.",
+    "imagem": "https://image.api.playstation.com/vulcan/img/rnd/202010/2217/L44x2x2y2z2A2B2C2D2E.png",
+    "Ano": 2020,
+    "link": "https://www.playstation.com/pt-br/games/ghost-of-tsushima/"
+},
+{
+    "nome": "The Last of Us Part II",
+    "slug": "last-of-us-part-ii",
+    "descrição": "Uma sequência de ação e aventura da Naughty Dog com uma narrativa intensa.",
+    "imagem": "https://image.api.playstation.com/vulcan/img/rnd/202010/2217/M3x3y3z3A3B3C3D3E3F.png",
+    "Ano": 2020,
+    "link": "https://www.playstation.com/pt-br/games/the-last-of-us-part-ii/"
+},
+{
+    "nome": "Hades",
+    "slug": "hades",
+    "descrição": "Um roguelike de ação e exploração de masmorras da Supergiant Games, baseado na mitologia grega.",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg",
+    "Ano": 2020,
+    "link": "https://www.supergiantgames.com/games/hades/"
+},
+{
+    "nome": "Disco Elysium",
+    "slug": "disco-elysium",
+    "descrição": "Um RPG inovador com foco em diálogo e investigação, desenvolvido pela ZA/UM.",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/632470/header.jpg",
+    "Ano": 2019,
+    "link": "https://discoelysium.com/"
+},
+{
+    "nome": "Outer Wilds",
+    "slug": "outer-wilds",
+    "descrição": "Um jogo de exploração espacial em mundo aberto com um mistério a ser resolvido, da Mobius Digital.",
+    "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/753640/header.jpg",
+    "Ano": 2019,
+    "link": "https://www.mobiusdigitalgames.com/outer-wilds.html"
+},
+{
+    "nome": "Control",
+    "slug": "control",
+    "descrição": "Um jogo de ação e aventura em terceira pessoa da Remedy Entertainment.",
+    "imagem": "https://image.api.playstation.com/vulcan/img/rnd/202010/2614/N4x4y4z4A4B4C4D4E4F.png",
+    "Ano": 2019,
+    "link": "https://www.controlgame.com/"
+},
+{
+    "nome": "Death Stranding",
+    "slug": "death-stranding",
+    "descrição": "Um jogo de ação com uma experiência única de Hideo Kojima.",
+    "imagem": "https://image.api.playstation.com/vulcan/img/rnd/202106/0816/A5x5y5z5A5B5C5D5E5F.png",
+    "Ano": 2019,
+    "link": "https://www.kojimaproductions.jp/en/death-stranding-ps4"
+},
+{
+    "nome": "Resident Evil 2",
+    "slug": "resident-evil-2",
+    "descrição": "Remake do clássico de survival horror de 1998, desenvolvido pela Capcom.",
+    "imagem": "https://image.api.playstation.com/vulcan/img/rnd/202010/2614/O6x6y6z6A6B6C6D6E6F.png",
+    "Ano": 2019,
+    "link": "https://www.residentevil.com/2/"
+},
+{
+    "nome": "Monster Hunter: World",
+    "slug": "monster-hunter-world",
+    "descrição": "Um RPG de ação onde os jogadores caçam monstros gigantes em um vasto mundo.",
+    "imagem": "https://image.api.playstation.com/vulcan/img/rnd/202010/2614/P7x7y7z7A7B7C7D7E7F.png",
+    "Ano": 2018,
+    "link": "https://www.monsterhunterworld.com/"
+},
+{
+    "nome": "Horizon Zero Dawn",
+    "slug": "horizon-zero-dawn",
+    "descrição": "Um RPG de ação em mundo aberto onde humanos lutam contra máquinas em um mundo pós-apocalíptico.",
+    "imagem": "https://image.api.playstation.com/vulcan/img/rnd/202010/2614/Q8x8y8z8A8B8C8D8E8F.png",
+    "Ano": 2017,
+    "link": "https://www.playstation.com/pt-br/games/horizon-zero-dawn/"
+},
+{
+    "nome": "Nier: Automata",
+    "slug": "nier-automata",
+    "descrição": "Um RPG de ação da PlatinumGames com uma história filosófica profunda.",
+    "imagem": "https://image.api.playstation.com/vulcan/img/rnd/202010/2614/R9x9y9z9A9B9C9D9E9F.png",
+    "Ano": 2017,
+    "link": "https://www.niergame.com/"
+},
+{
+    "nome": "Overwatch",
+    "slug": "overwatch",
+    "descrição": "Um jogo de tiro em primeira pessoa baseado em equipes, desenvolvido pela Blizzard Entertainment.",
+    "imagem": "https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c747/blt33633c4354277465/6286c34163554853935ab959/overwatch-2-reveal-feature-image-desktop.jpg",
+    "Ano": 2016,
+    "link": "https://overwatch.blizzard.com/"
+}
+]

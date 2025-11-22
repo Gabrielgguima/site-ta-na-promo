@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arquivo de Jogos</title>
+</head>
+<body>
+ <header>
+    <h1>Tá na promo?</h1>
+    <h4>A forma mais rápida de saber se seu jogo favorito está no precinho!</h4>
+    <div class="search-container">
+        <input type="text" id="input-busca" placeholder="Qual jogo deseja encontrar?">
+        <button id="botao-busca" onclick="iniciarBusca()">Buscar</button>
+        <button id="botao-voltar" style="display: none;">Limpar Busca</button>
+    </div>
+    <!-- Filtros de Categoria -->
+    <nav class="category-filters" id="category-filters">
+        <!-- Botões de categoria serão inseridos aqui via JS -->
+    </nav>
+ </header>
+
+ <main>
+    <section class="lancamentos-section">
+        <h2>Últimos Lançamentos</h2>
+        <div class="carousel-wrapper">
+            <button id="prev-lancamento" class="carousel-btn" title="Anterior">‹</button>
+            <div class="lancamentos-container" id="lancamentos-container">
+                <!-- Cards de lançamento serão inseridos aqui via JS -->
+            </div>
+            <button id="next-lancamento" class="carousel-btn" title="Próximo">›</button>
+        </div>
+    </section>
+
+    <h2 class="section-title" id="todos-os-jogos-title">Todos os Jogos</h2>
+    <section class="card-container" id="card-container">
+        <!-- Cards dos jogos serão inseridos aqui via JS -->
+    </section>
+</main>
+ 
+ <footer class="footer">
+    <ul class="footer-links">
+        <li>
+            
+        <a href="https://www.nuuvem.com/br-pt">Nuuvem</a>
+        </li>
+        <li><a href="https://www.instagram.com/morphelium">Instagram</a>
+        </li>
+    </ul>
+ </footer>
+
+ <!-- Modal para exibir a imagem do jogo -->
+ <div id="modal-imagem-container" class="modal-container">
+    <span class="modal-fechar">&times;</span>
+    <img class="modal-conteudo" id="modal-img" alt="Imagem do Jogo">
+ </div>
+
+ <!-- Botão para trocar o tema -->
+ <div class="theme-switcher-container">
+    <button id="theme-toggle" title="Alternar tema">☀️</button>
+ </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
